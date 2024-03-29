@@ -1,9 +1,9 @@
 function getFormvalue() {
-	event.preventDefault()
+	let firstName = document.getElementsByName("fname")[0].value;
+    let lastName = document.getElementsByName("lname")[0].value;
 
-	let fname = document.getElementById(fname).value;
-	let lname = document.getElementById(lname).value;
-	
-    return alert(fname + " " + lname)
+    // Concatenate first name and last name and display in alert
+    alert(firstName + " " + lastName);
 
 }
+
